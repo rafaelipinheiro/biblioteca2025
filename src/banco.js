@@ -7,6 +7,7 @@ const banco = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.en
     dialect: "postgres",
     host: process.env.DB_HOST,
     logging: true, 
+    dialectOptions: { ssl: true },
     define: {
         timestamps: false,
         freezeTableName: true
