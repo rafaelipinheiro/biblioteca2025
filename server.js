@@ -122,7 +122,7 @@ app.get('/listar/emprestimos/periodo/:dtinicial/:dtfinal', emprestimo.listarEmpr
 //Teste
 app.get('/listar2', livro.listar2);
 
-banco.authenticate();
+//banco.authenticate();
 //banco.sync(); //Para gerar o banco a partir das models
 
 app.listen(4000, () => {
